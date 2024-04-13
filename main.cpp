@@ -64,9 +64,6 @@ public:
 
     // eliminar el primer elemento
     void pop_front() {
-        if (empty())
-            return;
-
         Node<T> *temp = head;
         head = head->next;
         delete temp;
